@@ -162,19 +162,31 @@ void detectOneWord()
 		{
 			GetChar();
 			if(ch=='=') cout<<"#LETHAN,-"<<endl;
-			else Retract();cout<<"#LTHAN,-"<<endl;
+			else 
+			{
+				Retract();
+				cout<<"#LTHAN,-"<<endl;
+			}
 		}
 	else if(ch=='>')//>=
 		{
 			GetChar();
 			if(ch=='=') cout<<"#GETHAN,-"<<endl;
-			else Retract();cout<<"#GTHAN,-"<<endl;
+			else 
+			{
+				Retract();
+				cout<<"#GTHAN,-"<<endl;
+			}
 		}
 	else if(ch=='=')//==
 		{
 			GetChar();
 			if(ch=='=') cout<<"#EQUAL,-"<<endl;
-			else Retract();cout<<"#ASSIGN,-"<<endl;
+			else
+			{
+				Retract();
+				cout<<"#ASSIGN,-"<<endl;
+			}
 		}
 	else if(ch=='!')
 		{
