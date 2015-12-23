@@ -122,6 +122,10 @@ void detectOneWord()
 	strToken.clear();
 	 GetChar();
     GetBC();
+
+	if(!(ptr<code.length()))
+		return;
+
     if(IsLetter())
     {
         while(IsLetter())
